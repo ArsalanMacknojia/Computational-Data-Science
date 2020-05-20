@@ -1,0 +1,18 @@
+# CMPT 353 - Computational Data Science
+# Arsalan Macknojia 
+
+Q.1 Where you did the same calculations with NumPy and Pandas, which did you find easier to work with? 
+Which code do you think is easier to read?
+
+A. 
+Calculations to find the city with the lowest precipitation, average precipitation in each month and average precipitation in each city were quite similar. 
+I found both the libraries easy to work with due to extensive documentation available online. In terms of readability, I found Pandas code a bit easier to read.
+
+Q.2 What were the running times of the two pivot_months_* functions? How can you explain the difference?
+
+A. 
+pivot_months_loops runtime: 778 ms ± 34.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+pivot_months_pandas runtime: 34.5 ms ± 1.21 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+
+pivot_months_pandas runtime is 22x faster compared to pivot_months_loops which uses standard python data structures such as sets and dictionaries along with a for loop to iterate over data.
+The difference is due to Pandas' DataFrame which is an efficient data structure designed specifically for data science and analytics. It does high-performance vectorized calculations using highly optimized C code to avoid Python level loops. It also exhibits strong temporal and spatial locality which results in great performance using techniques such as caching, prefetching, and advance branch predictors.
