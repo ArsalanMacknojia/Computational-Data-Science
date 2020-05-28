@@ -1,0 +1,11 @@
+// CMPT 353 - Exercise 2
+// Arsalan Macknojia
+
+
+Q.1 In the hint above, what is the result of the calculation data['timestamp']*fit.slope + fit.intercept? What is the type, and describe the values.
+A. The above mentioned equation calculates the y-axis coordinates of the best fit line. Value type is float.
+
+Q.2 In the same hint, why does this produce a fit line on the graph? Why are the created_at values and timestamp values paired correctly to make points on the plot?
+A. Mathematical equation to create a linear line is y = mx + c, where m is the gradient and c is the y-intercept.
+Using stats.linregress library along with 'timestamp' and 'ratings' values, we were able to determined the gradient and y-intercept of the best fit line.
+To calculate the y-axis coordinates we simply inserted timestamp value as 'x' in the linear equation (y = mx + c). Once we had the x and y coordinated we used that to plot the best line.
