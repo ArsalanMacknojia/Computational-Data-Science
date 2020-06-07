@@ -1,0 +1,9 @@
+// CMPT 353 - Exercise 3
+// Arsalan Macknojia
+
+Q.1 When smoothing the CPU temperature, do you think you got a better result with LOESS or Kalman smoothing? What differences did you notice?
+A. I think LOESS smoothing generated a better result compared to Kalman. I noticed LOESS was smoother than Kalman and I suspect its due to the assumptions made in Kalman's transition matrix.
+
+Q.2 In the GPX files, you might have also noticed other data about the observations: time stamp, course (heading in degrees from north, 0–360), speed (in m/s). How could those have been used to make a better prediction about the “next” latitude and longitude?
+A. We could have predicted next latitude and longitude using the course (direction) and distance travelled in the direction.
+To calculate the distance we could have used speed and timestamp. (distance = speed * time)
