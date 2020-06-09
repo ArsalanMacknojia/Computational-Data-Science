@@ -1,0 +1,10 @@
+// CMPT 353 - Exercise 4
+// Arsalan Macknojia
+
+Q.1 Based on your results for the last question, do you think daily temperatures are a good way to predict population density? Briefly explain why or why not.
+A. I think there is a pattern in daily temperature and population density graph using which we can predict population density to a certain extent.
+The average population density is higher where temperature is between 15°C and 25°C. The density decreases significantly when temperature is less than 15°C or higher than 30°C.
+
+Q.2 The larger data file (stations.json.gz) was kept compressed on disk throughout the analysis. Decompressing every time we run the program seems inefficient. Why might this be faster than working with an uncompressed .json data?
+A. Compressed files are smaller and easier to load into memory than large uncompressed file. Large files requires more pages in HDD and reading those pages from memory is significantly slower compared to CPU processing speed.
+Hence loading smaller file (less memory pages) and doing in-memory decompression can be more efficient than accessing large uncompressed data.
