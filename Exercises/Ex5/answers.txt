@@ -1,0 +1,18 @@
+// CMPT 353 - Exercise 5
+// Arsalan Macknojia
+
+Q.1 Which of the four transforms suggested got you the closest to satisfying the assumptions of a T-test?
+A. Transforming data by taking the square root (np.sqrt) was the closest to satisfying the assumptions of a T-test.
+
+Q.2 I gave imprecise English translations of what the by-week test, and the Mann-Whitney test were actually testing.
+Do the same for the original T-test, and for the transformed data T-test. That is, describe what the conclusion would be if you could reject the null hypothesis in those tests.
+A.
+If we reject null hypothesis for original T-test, the conclusion would be the mean comment count for weekday and weekend is different.
+If we reject null hypothesis for transformed data T-test, the conclusion would be the variance of weekday and weekend is different.
+
+Q.3 Of the four approaches, which do you think actually does a better job of getting an answer for the original question: “are there a different number of Reddit comments posted on weekdays than on weekends?”
+Briefly explain why. (It's not clear to me that there is a single correct answer to this question.)
+A. In my opinion, Mann–Whitney U-test did a better job without any transformation compared to other methods.
+
+Q.4 When are more Reddit comments posted in /r/canada, on average weekdays or weekends?
+A. Mean comment count for weekday and weekend suggest that there are more comments posted on weekdays.
