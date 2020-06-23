@@ -1,0 +1,16 @@
+// CMPT 353 - Exercise 6
+// Arsalan Macknojia
+
+Q.1 In the A/B test analysis, do you feel like we're p-hacking? How comfortable are you coming to a conclusion at p < 0.05?
+A. Yes, to a certain extent since we are only analysing a subset of data (instructor) to draw conclusion. Based on the analysis p-value is greater than 0.05.
+
+Q.2 If we had done T-tests between each pair of sorting implementation results, how many tests would we run? If we looked for p < 0.05 in them, what would the probability be of having all conclusions correct, just by chance? That's the effective p-value of the many-T-tests analysis.
+A.
+We would have to run 21 tests. The probability of having all conclusions correct would be 0.95 ^ 21 => 0.3405616263
+
+Q.3 Give a ranking of the sorting implementations by speed, including which ones could not be distinguished. (i.e. which pairs could our experiment not conclude had different running times?)
+A.
+Following is the ranking of the sorting implementation from fastest to slowest:
+partition_sort, qs1, (qs2 and qs3), (qs4 and qs5), merge1
+
+Sort implementation qs2 and qs3 are indistinguishable. Similarly, qs4 and qs5 are indistinguishable.
