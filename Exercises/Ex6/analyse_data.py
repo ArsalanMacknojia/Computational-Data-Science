@@ -8,6 +8,7 @@ def main():
 
     reshape_data = pd.melt(data)
     posthoc = pairwise_tukeyhsd(reshape_data['value'], reshape_data['variable'])
+    print(posthoc)
     posthoc.plot_simultaneous()
     plt.show()
 

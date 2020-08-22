@@ -1,5 +1,3 @@
-# CMPT 353 - Exercise 5
-# Arsalan Macknojia
 
 import sys
 import numpy as np
@@ -23,7 +21,6 @@ def filter_data(df):
     # Filter data for subreddit Canada for years 2012 and 2013.
     df = df[df['subreddit'] == 'canada']
     df = df.loc[(df['date'] >= '2012-01-01') & (df['date'] <= '2013-12-31')]
-
     # Generate separate DF for weekdays and weekends.
     df['day'] = df['date'].dt.dayofweek
     weekday = df[df['day'] <= 4]

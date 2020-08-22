@@ -68,6 +68,7 @@ def main():
     # Filter data
     cities = cities.dropna()
     cities['area sq km'] = cities['area'] * SQUARE_M_TO_SQUARE_KMS
+
     cities = cities[cities['area sq km'] <= 10000]
 
     # Calculate population density (population / area km²)

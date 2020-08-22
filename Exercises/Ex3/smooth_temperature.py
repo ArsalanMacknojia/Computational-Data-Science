@@ -39,6 +39,7 @@ def main(cpu_data):
     # Legend added
     plt.legend(['scatterplot', 'LOESS-smoothed', 'Kalman-smoothed'])
     plt.show()
+    plt.title()
     plt.savefig('cpu.svg')
 
 
