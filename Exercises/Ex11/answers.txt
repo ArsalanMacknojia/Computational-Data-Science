@@ -1,0 +1,19 @@
+// CMPT 353 - Exercise 11
+// Arsalan Macknojia
+
+Q. In your reddit_relative.py, what intermediate results did you .cache()? Briefly describe what would have happened if you hadn't used .cache() anywhere.
+A.
+I cached the DataFrame after calculating the relative score. The upfront cost to generate the DataFrame is high and its been used multiple times in the program, hence,
+not caching it will result in high execution time.
+
+Q. How did marking DataFrames for broadcast affect the running time of the “best author” program above?
+A. Marking DataFrames for broadcast resulted in a faster execution time.
+Execution time with broadcast:
+real 0m41.485s
+user 0m26.880s
+sys 0m1.688s
+
+Execution time without broadcast:
+real 0m45.394s
+user 0m29.536s
+sys 0m1.836s
