@@ -1,0 +1,14 @@
+// CMPT 353 - Exercise 8
+// Arsalan Macknojia
+
+Q.1 Which model did the best for the colour-prediction task? Can you give a theory about why? Do you have any theory about why RGB/LAB/HSV worked better for different models?
+A.
+k-NN (k-nearest neighbours) model performed better compared to other models with an average score of greater than 0.71.
+I think k-NN produced a better result because it tends to perform better with a lot of data points. Secondly, k-NN is sensitive to outliers but since the input had similar color (RGB values) close to each other it didn't affected the overall result.
+LAB worked better since colour space is much more perceptually uniform.
+
+
+Q.2 Have a look at the cities in your validation data where the weather model makes the wrong prediction. Do you feel like the model is making reasonable mistakes? Can you think of any weather features that we could potentially add to make better predictions?
+A.
+Going over the data, I believe, model is making reasonable mistakes since closer cities usually have similar weather conditions.
+Weather features like wind speed and direction, humidity and atmospheric pressure can potentially improve the overall predictions.
