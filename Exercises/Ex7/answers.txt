@@ -1,0 +1,9 @@
+// CMPT 353 - Exercise 7
+// Arsalan Macknojia
+
+Q.1 Looking at your dog-rates.ipynb, do you think the residual are close-enough to being normal to look at the OLS p-value? Can you reasonably conclude that the ratings are increasing?
+A.Residuals are not normally distributed. Values are left skewed so we cannot look at the OLS p-value unless we do some data transformation.
+Since we can't reject the null hypothesis, we cannot conclude that the ratings are increasing.
+
+Q.2 Do you think that the new “better” prediction is letting the Kalman filter do a better job capturing the true signal in the noise?
+A. Yes, the new prediction is definitely allowing Kalman filter to do a better job. However, the overall filtering doesn't improve much because with increase in data there is an increase in noise as well.
